@@ -51,8 +51,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    /* background-color: pink; */
-    /* justify-content: space-between; */
     padding: 20px;
     width: 100%;
     align-items: center;
@@ -61,8 +59,8 @@ body {
 
 /* Product Card */
 .product-card {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
-    max-width: calc(26.33% - 20px); /* Adjust max-width for 3 cards per row with 20px gap */
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(26.33% - 20px);
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
@@ -94,7 +92,7 @@ body {
 
 .product-image {
     max-width: 100%;
-    height: 200px; /* Adjust height for better consistency */
+    height: 200px; 
 }
 
 .product-button {
@@ -124,7 +122,6 @@ body {
 }
 .tag_home_link{
     display: flex;
-    /* background-color: red; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -166,7 +163,6 @@ body {
 }
 .cart_quantity_count{
     margin-top: 16px;
-    /* background-color: red; */
     margin-left: 27px;
     position: absolute;
     font-size: 29px;
@@ -176,7 +172,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-    /* background-color: yellow; */
+
 }
 .plant_heading{
     width: 400px;
@@ -191,14 +187,14 @@ body {
 /* Add Media Query for responsiveness */
 @media (max-width: 768px) {
     .product-card {
-        flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on smaller screens */
-        max-width: calc(50% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on smaller screens */
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px); 
     }
 }
 /* ProductList.css */
 
 .product-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; 
     border: none;
     color: white;
     padding: 10px 20px;
@@ -216,37 +212,70 @@ body {
   }
   
   .product-button.added-to-cart {
-    background-color: grey; /* Grey when product is added */
+    background-color: grey; 
   }
   @media (max-width: 1200px) {
     .product-card {
-      flex: 1 1 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap on medium screens */
-      max-width: calc(33.33% - 20px); /* Adjust max-width for 3 cards per row with 20px gap on medium screens */
+      flex: 1 1 calc(33.33% - 20px); 
+      max-width: calc(33.33% - 20px); 
     }
   }
   
   @media (max-width: 768px) {
     .product-card {
-      flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on small screens */
-      max-width: calc(50% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on small screens */
+      flex: 1 1 calc(50% - 20px); 
+      max-width: calc(50% - 20px); 
     }
     .navbar {
-        flex-direction: column; /* Change flex direction to stack items vertically */
-        align-items: center; /* Align items to the center of the container */
+        flex-direction: column; 
+        align-items: center; 
       }
     
       .tag {
-        margin-bottom: 20px; /* Add margin bottom for spacing */
-        text-align: center; /* Align text to the center */
+        margin-bottom: 20px; 
+        text-align: center; 
       }
     
       .ul {
-        display: flex; /* Set display to flex */
-        flex-direction: column; /* Change flex direction to stack items vertically */
-        gap: 10px; /* Add gap between items */
+        display: flex; 
+        flex-direction: column; 
+        gap: 10px; 
       }
     
       .ul div {
-        text-align: center; /* Align text to the center */
+        text-align: center; 
       }
   }
+
+  .product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+.plants-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.plant-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.plant-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.navbar .ul li a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
